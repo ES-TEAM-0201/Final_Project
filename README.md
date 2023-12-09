@@ -40,8 +40,8 @@
 - 라즈베리 파이 GPIO Port 부족으로 인한 라즈베리 파이간 통신 엑츄에이터인 UART 통신 계획
 
 - 각 라즈베리 파이의 엑추에이터 세팅 계획
- ![그림2](https://github.com/ES-TEAM-0201/Final_Project/assets/94772949/f876b9b4-3527-4725-884d-c00c4e5140b2)
-![그림3](https://github.com/ES-TEAM-0201/Final_Project/assets/94772949/83080d41-02d5-4338-b280-2d126dd3eb99)
+<img src="/임베디드/그림2.png" width="300" height="300">
+<img src="/임베디드/그림3.png" width="300" height="300">
 
 
 ### 개발 현황 정리
