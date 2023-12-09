@@ -31,10 +31,9 @@
 |12월 21일|전체 데모 영상 제작 및 발표|
 
 ### 1차 계획 발표 내용
-<img src="/images/계획.png" width="300" height="300">
-<img src="/images/일정.png" width="300" height="300">
-![계획](https://github.com/ES-TEAM-0201/Final_Project/assets/94772949/26e23579-344d-4260-9e13-bc9d78848bb6)
-![일정](https://github.com/ES-TEAM-0201/Final_Project/assets/94772949/eab3f602-022c-42ef-9637-6675661cad6d)
+<img src="/images/계획.png">
+<img src="/images/일정.png">
+
 
 ### 2차 계획 수립
 **(1차 계획 발표와 변경된 점)**
@@ -42,7 +41,7 @@
 - 라즈베리 파이 GPIO Port 부족으로 인한 라즈베리 파이간 통신 엑츄에이터인 UART 통신 계획
 
 - 각 라즈베리 파이의 엑추에이터 세팅 계획
-<img src="/images/라즈베리파이_예제.png" width="300" height="300">
+<img src="/images/라즈베리파이_예제.png">
 
 
 ### 개발 현황 정리
