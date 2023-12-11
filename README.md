@@ -79,6 +79,40 @@
 |멀티 쓰레드 동작 구현|진행 중(12.10, 12.11), 완료(12.13)|곽지호, 김경미, 김현서, 이지윤|
 |각 라즈베리 파이의 socket 통신|진행 중(12.10, 12.11)|곽지호, 김경미, 김현서, 이지윤|
 - 참고 사이트[ https://blog.naver.com/zeta0807/221269996160 ]
+  
+```mermaid
+gantt
+    title 개발 계획 대비 진행 상황
+    dateFormat  YYYY-MM-DD
+    section Raspi 1
+    초음파 센서 / 카메라  : done, 2023-12-05, 5d
+    LED / 스위치 : done, 2023-12-06, 1d
+    로터리 엔코더 : done, 2023-12-06, 2d
+
+    %% 일찍 구현된 부분 추가
+    section Raspi 1 complete
+    초음파 센서 / 카메라 완료  : 2023-12-05, 4d
+    LED / 스위치 완료 : 2023-12-06, 1d
+    로터리 엔코더 완료 : 2023-12-06, 1d
+
+    section Raspi 2
+    LED / 스피커 : done, 2023-12-06, 2d
+    서보모터 : done, 2023-12-07, 1d
+
+    %% 일찍 구현된 부분 추가
+    section Raspi 2 complete
+    LED / 스피커 완료 : 2023-12-06, 1d
+    서보모터 완료 : 2023-12-07, 1d
+
+    section Communication
+    멀티 프로세스 연결 : done, 2023-12-09, 4d
+
+    section Communication complete
+    멀티 프로세스 연결 완료 : 2023-12-09, 2d
+
+    section Final Test
+    최종 테스트 : 2023-12-13, 2d
+```
 
 
 ### 각 엑추에이터의 정의
