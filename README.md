@@ -181,6 +181,32 @@ gantt
 
 
 ### 개발 시 문제점 및 해결 방안
+#### 1. 카메라 연동 관련 문제
+```python
+ret, img = cam.read()
+gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
+```
+```
+-215:Assertion failed !_src.empty() in function 'cvtColor'
+```
+위와 같은 코드에서 !_src.empty() 오류가 발생하였고, 이는 라즈베리파이에 카메라 설치 관련 오류가 생겼다 판단되어 코드에 디버깅 과정을 추가하여 작동해 보았다.</br>
+```python
+cam = cv2.VideoCapture(0)
+if not cam.isOpened():
+    print("에러: 카메라를 열 수 없습니다.\n")
+# ~생략~
+ret, img = cam.read()
+if not ret:
+    print("에러: 카메라에서 프레임을 읽는 데 실패했습니다.\n")
+    continue
+```
+해당 디버깅 결과로, 프레임(ret)을 읽는 것에 실패했음을 알 수 있었다. 원인을 해결하기 위해 아래와 같은 과정을 진행하였다.
+-  sudo raspi-config  → Interfacing Options → Legacy Camera → Enable
+- lsmod | grep bcm2835
+- sudo reboot
+- raspistill -o cam.jpg 
+
+위와 같이 문제 해결을 위해 라즈베리파이 설정을 업데이트하고 카메라 모듈을 활성화하는 등의 조치를 취하였다. 초기에는 이러한 조치로 문제가 해결되었지만, 이후 다시 동일한 오류가 발생하였다. 이 경우 카메라 모듈이나 라즈베리파이의 카메라 포트에 손상이 있을 수 있다고 판단된다.
 
 
 ###   프로젝트 구현 결과
