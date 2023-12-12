@@ -181,7 +181,7 @@ gantt
 
 
 ### 개발 시 문제점 및 해결 방안
-#### 1. 카메라 연동 관련 문제
+#### 1. 카메라 설치 관련 문제
 ```python
 ret, img = cam.read()
 gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
