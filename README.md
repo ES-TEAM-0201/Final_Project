@@ -182,6 +182,7 @@ gantt
 	- Makefile [Make 유틸리티]
 	- main [실행파일]	
 
+**Makefile : src 안에 있는 코드 모두를 대상으로 하여 목적파일 생성.**
 
 <hr>
 
