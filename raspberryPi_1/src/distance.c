@@ -53,7 +53,7 @@ void *getDistance(void *arg) {
 
             // 파일에서 데이터 읽기
             while (fgets(buffer, sizeof(buffer), file) != NULL) {
-                printf("%s\n제발 되라", buffer);
+                printf("%s\n", buffer);
             }
 
             // 파일 닫기
