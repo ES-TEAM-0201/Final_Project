@@ -15,7 +15,7 @@
 - [코드 구조](#코드-구조)
 - [개발 시 문제점 및 해결 방안](#개발-시-문제점-및-해결-방안)
 - [프로젝트 구현 결과](#프로젝트-구현-결과)
-
+- [Requirement 및 Useage](#Useage)
 
 <hr>
 
@@ -231,3 +231,13 @@ https://youtube.com/shorts/uNs-Yv23Zb4?feature=share
 - python
   - OpenCV2
 
+### Useage
+**같은 네트워크 연결 필요**
+```
+root:~$ cd ~/Final_Project/raspberryPi_1
+root:~$ make
+root:~/Final_Project/raspberryPi_1 $ sudo ./main
+ 
+root:~$ cd ~/Final_Project/raspberryPi_2
+root:~/Final_Project/raspberryPi_2 $ ./main
+```
